@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block head %}{% endblock %}
+
+{% block body %}
+    
+<div class = "wSpace">
+    <div class="title">
+        <h1>Variables predictivas de clientes</h1>
+    </div>
+    <br />
+    <table class = "Inputs">
+        <tr>
+            <th style="text-align: center;">Variable</th>
+            <th style="text-align: center;">Valor</th>
+        </tr>
+        {% for i in inputs%}     
+            <tr>                        
+                <form action="/Data" method="POST">
+                    <td><b>{{i}}</b></td>
+                    <td><p><input type="text" value="100" placeholder="ingrese el valor de {{i}}" name="{{ i }}" id="{{i}}"></p></td> 
+            </tr>
+        {% endfor %}
+            <tr>
+                    <td><input class="btn btn-outline-success btn-lg" type="submit" value="Send"></td>
+                </form>
+            </tr>
+    </table>           
+</div><br /><br />
+    
+
+
+{% endblock %}
