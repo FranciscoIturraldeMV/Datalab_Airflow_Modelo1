@@ -1,0 +1,77 @@
+/* Nav Bar */
+
+
+.header {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #443cb6;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+nav {
+    min-height: 20vh;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 2rem;
+    align-items: center;
+}
+
+#logo {
+    flex: 3 1 50rem;
+}
+
+/* Workspace */
+
+
+.wSpace {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    align-items: center;
+}
+
+table, td, th {
+    border: 1px solid black;
+    margin-bottom: 300px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 30%;
+}
+
+th {
+    height: 30px;
+    font-size: 2rem;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+    font-size: 2rem
+}
+
+form {
+    font-size: 1.5rem;
+
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+
